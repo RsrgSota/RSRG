@@ -101,12 +101,12 @@ void loop() {
     Serial.print("ПРОВЕРКА ");
     Serial.println(valBluetooth);
     
-    if      ( valBluetooth == 48 )  { cubeColors[0] = "red"; cubeColors[1] = "black"; }
-    else if ( valBluetooth == 49 )  { cubeColors[0] = "red"; cubeColors[1] = "blue";  }
-    else if ( valBluetooth == 50 )  { cubeColors[0] = "red"; cubeColors[1] = "green"; }
-    else if ( valBluetooth == 51 )  { cubeColors[0] = "black"; cubeColors[1] = "blue";  }
-    else if ( valBluetooth == 52 )  { cubeColors[0] = "black"; cubeColors[1] = "green"; }
-    else if ( valBluetooth == 53 )  { cubeColors[0] = "blue"; cubeColors[1] = "green";  }
+    if      ( valBluetooth == 48 )  { cubeColors[0] = "red"; cubeColors[1] = "black"; stopFlag  = false;    }
+    else if ( valBluetooth == 49 )  { cubeColors[0] = "red"; cubeColors[1] = "blue"; stopFlag  = false;     }
+    else if ( valBluetooth == 50 )  { cubeColors[0] = "red"; cubeColors[1] = "green"; stopFlag  = false;    }
+    else if ( valBluetooth == 51 )  { cubeColors[0] = "black"; cubeColors[1] = "blue"; stopFlag  = false;   }
+    else if ( valBluetooth == 52 )  { cubeColors[0] = "black"; cubeColors[1] = "green"; stopFlag  = false;  }
+    else if ( valBluetooth == 53 )  { cubeColors[0] = "blue"; cubeColors[1] = "green"; stopFlag  = false;   }
 
     else if ( valBluetooth == 33 )  {
       while (true) {
